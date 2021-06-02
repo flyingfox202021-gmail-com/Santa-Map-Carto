@@ -1,1 +1,1 @@
-
+This is an adaptation of the Openstreet Map Carto. Currently colour changes are in progress to aid in development for final approval of Map colour scheme. Once approved, a rebuild to incoorparate changes and be released under Project Flying-Fox.
