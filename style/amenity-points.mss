@@ -2037,7 +2037,7 @@
     }
   }
 
-  [feature = 'landuse_military'],
+  ,
   [feature = 'natural_wood'],
   [feature = 'landuse_forest'],
   [feature = 'boundary_national_park'],
@@ -2063,9 +2063,6 @@
       text-face-name: @landcover-face-name;
       text-halo-radius: @standard-halo-radius;
       text-halo-fill: @standard-halo-fill;
-      [feature = 'landuse_military'] {
-        text-fill: darken(@military, 40%);
-      }
       [feature = 'boundary_aboriginal_lands'] {
         text-fill: @aboriginal;
       }
@@ -2078,30 +2075,6 @@
       [feature = 'boundary_protected_area'] {
         text-fill: @protected-area;
       }
-    }
-  }
-
-  [feature = 'military_danger_area'][is_building = 'no'] {
-    [zoom >= 17][way_pixels > 3000],
-    [zoom >= 17] {
-      text-name: "[name]";
-      text-size: @landcover-font-size;
-      text-wrap-width: @landcover-wrap-width-size;
-      text-line-spacing: @landcover-line-spacing-size;
-      [way_pixels > 12000] {
-        text-size: @landcover-font-size-big;
-        text-wrap-width: @landcover-wrap-width-size-big;
-        text-line-spacing: @landcover-line-spacing-size-big;
-      }
-      [way_pixels > 48000] {
-        text-size: @landcover-font-size-bigger;
-        text-wrap-width: @landcover-wrap-width-size-bigger;
-        text-line-spacing: @landcover-line-spacing-size-bigger;
-      }
-      text-fill: darken(@military, 20%);
-      text-face-name: @landcover-face-name;
-      text-halo-radius: @standard-halo-radius;
-      text-halo-fill: @standard-halo-fill;
     }
   }
 
