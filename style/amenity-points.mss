@@ -2082,7 +2082,7 @@
   }
 
   [feature = 'military_danger_area'][is_building = 'no'] {
-    [zoom >= 9][way_pixels > 3000],
+    [zoom >= 17][way_pixels > 3000],
     [zoom >= 17] {
       text-name: "[name]";
       text-size: @landcover-font-size;
