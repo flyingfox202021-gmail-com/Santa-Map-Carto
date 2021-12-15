@@ -2037,7 +2037,6 @@
     }
   }
 
-  ,
   [feature = 'natural_wood'],
   [feature = 'landuse_forest'],
   [feature = 'boundary_national_park'],
